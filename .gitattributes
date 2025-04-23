@@ -1,0 +1,27 @@
+# Unreal Engine binary assets (DO NOT MERGE)
+*.uasset binary -merge
+*.umap binary -merge
+
+# Make Git treat them as binary
+*.uasset -text
+*.umap -text
+
+# Optional: Use Git LFS for large binaries if you're using GitHub or similar
+# (Uncomment if you have Git LFS set up)
+# *.uasset filter=lfs diff=lfs merge=lfs -text
+# *.umap filter=lfs diff=lfs merge=lfs -text
+
+# Ignore auto-generated binary logs
+Saved/** -text
+Intermediate/** -text
+
+# Prevent merging engine version conflicts (optional)
+*.uproject text merge=union
+
+# Optional: keep newline and whitespace handling consistent
+*.cpp text diff
+*.h text diff
+*.ini text eol=lf
+*.cs text diff
+*.usf text diff
+*.ush text diff
