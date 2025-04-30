@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{DB1C93F5-4C9D-D882-ADA8-0EB74477259B}",
+	"EngineAssociation": "{58BB59BA-436F-3859-750C-5F9DC91422E5}",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -10,6 +10,10 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
 		}
 	]
 }
